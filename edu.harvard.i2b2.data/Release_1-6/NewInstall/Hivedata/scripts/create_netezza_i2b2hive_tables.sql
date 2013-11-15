@@ -69,7 +69,4 @@ create table CRC_ANALYSIS_JOB (
    create_date date, 
    update_date date,
    CONSTRAINT ANALSIS_JOB_PK PRIMARY KEY(JOB_ID) 
-) ;
-
-CREATE INDEX CRC_IDX_AJ_QNSTID ON CRC_ANALYSIS_JOB(queue_name,status_type_id);
- 
+) ; 

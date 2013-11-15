@@ -31,10 +31,7 @@ CREATE TABLE I2B2 (
       C_SYMBOL            VARCHAR(50)   NULL
 )
 ;
-CREATE INDEX META_FULLNAME_I2B2_IDX ON I2B2(C_FULLNAME)
-;
-CREATE INDEX META_APPLIED_PATH_I2B2_IDX ON I2B2(M_APPLIED_PATH)
-;
+
 
 --------------------------------------------------------
 --  DDL for Table BIRN
@@ -67,10 +64,6 @@ CREATE TABLE BIRN (
       C_PATH            VARCHAR(700)   NULL,
       C_SYMBOL            VARCHAR(50)   NULL
 )
-;
-CREATE INDEX META_FULLNAME_BIRN_IDX ON BIRN(C_FULLNAME)
-;
-CREATE INDEX META_APPLIED_PATH_BIRN_IDX ON BIRN(M_APPLIED_PATH)
 ;
 
 --------------------------------------------------------
@@ -151,10 +144,6 @@ CREATE TABLE CUSTOM_META (
 )
 ;
 
-CREATE INDEX META_FULLNAME_CUSTOM_IDX ON CUSTOM_META(C_FULLNAME)
-;
-CREATE INDEX META_APPLIED_PATH_CUSTOM_IDX ON CUSTOM_META(M_APPLIED_PATH)
-;
 --------------------------------------------------------
 --  DDL for Table ONT_PROCESS_STATUS
 --------------------------------------------------------
